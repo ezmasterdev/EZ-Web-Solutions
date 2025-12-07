@@ -286,48 +286,49 @@
         <h3>Start Your Project Today</h3>
         <p class="text-muted">Have a project in mind? Fill out the form and we’ll get back to you shortly.</p>
 
-        <div class="card-neo p-4">
-          <form id="contactForm" 
-                action="https://api.web3forms.com/submit" 
-                method="POST">
+        <div class="card-neo p-4" id="formWrapper">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="17f2c8df-3340-4d04-8bb2-7a9af9f8314e">
 
-            <!-- Web3Forms Access Key -->
-            <input type="hidden" name="access_key" value="17f2c8df-3340-4d04-8bb2-7a9af9f8314e">
-
-            <!-- Redirect to GitHub Pages thank-you page -->
-            <input type="hidden" name="redirect" value="https://ezmasterdev.github.io/thank-you.html">
-
-            <div class="mb-3">
+                <div class="mb-3">
                 <label class="form-label small">Full Name</label>
                 <input class="form-control" type="text" name="name" placeholder="Jane Doe" required>
-            </div>
+                </div>
 
-            <div class="mb-3">
+                <div class="mb-3">
                 <label class="form-label small">Email</label>
                 <input class="form-control" type="email" name="email" placeholder="name@domain.com" required>
-            </div>
+                </div>
 
-            <div class="mb-3">
+                <div class="mb-3">
                 <label class="form-label small">Project Type</label>
                 <select class="form-select" name="project">
-                <option>Static Business Website / Landing Page</option>
-                <option>Dynamic Web Application (PHP/MySQL)</option>
-                <option>Academic Thesis/Capstone System</option>
-                <option>Maintenance & Support</option>
-                <option>Other Inquiry</option>
+                    <option>Static Business Website / Landing Page</option>
+                    <option>Dynamic Web Application (PHP/MySQL)</option>
+                    <option>Academic Thesis/Capstone System</option>
+                    <option>Maintenance & Support</option>
+                    <option>Other Inquiry</option>
                 </select>
-            </div>
+                </div>
 
-            <div class="mb-3">
+                <div class="mb-3">
                 <label class="form-label small">Project Details / Message</label>
                 <textarea class="form-control" name="message" rows="4" placeholder="Brief description of your project"></textarea>
-            </div>
+                </div>
 
-            <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end">
                 <button class="btn neon-btn" type="submit">Send Inquiry</button>
+                </div>
+            </form>
+
+            <!-- Thank You Card (hidden by default) -->
+            <div id="thankYouCard" class="text-center" style="display:none; padding:2rem;">
+                <h4>Thank You!</h4>
+                <p class="text-muted">Your message has been sent successfully. We'll get back to you shortly.</p>
+                <button class="btn neon-btn mt-3" id="backToForm">Send Another</button>
             </div>
-          </form>
         </div>
+
       </div>
 
       <!-- Contact Info + Map -->
