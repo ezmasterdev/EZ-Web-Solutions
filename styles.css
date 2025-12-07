@@ -1,0 +1,145 @@
+:root{
+  --bg:#0A0F1F;
+  --bg-2:#0E1B30;
+  --accent:#00E5FF;
+  --accent-2:#4DA8DA;
+  --muted:#9FB3C8;
+  --glass: rgba(255,255,255,0.03);
+}
+
+html, body { height: 100%; scroll-behavior:smooth; }
+body {
+  background: linear-gradient(180deg,var(--bg) 0%, #060812 100%);
+  color: #EAF6FF;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-2); }
+
+.container-xl { max-width: 1150px; }
+
+/* Sticky Navbar */
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(5,8,18,0.78);
+  backdrop-filter: blur(12px);
+  padding:1rem 0;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.navbar-brand { font-family:'Montserrat'; font-weight:700; letter-spacing:0.6px; }
+.nav-link { color:rgba(234,246,255,0.8) !important }
+.nav-link:hover,
+.nav-link.active { color:var(--accent) !important }
+
+/* Hero Section w/ Background */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top:100px; /* Prevent hiding under sticky nav */
+  background:
+    linear-gradient(180deg, rgba(10,15,31,0.55), rgba(10,15,31,0.85)),
+    url('resources/images/bg.png') center/cover no-repeat;
+  background-attachment: fixed;
+}
+.hero .eyebrow { color:var(--muted); font-weight:600; }
+.hero h1 { font-family:'Montserrat'; font-weight:800; font-size:2.6rem; line-height:1.02; }
+.lead-weak { color:#FFFFFF; font-size:1.05rem; }
+
+.neon-btn {
+  background: linear-gradient(90deg, rgba(0,229,255,0.12), rgba(77,168,218,0.06));
+  border: 1px solid rgba(0,229,255,0.18);
+  box-shadow: 0 6px 24px rgba(0,229,255,0.06), 0 0 18px rgba(0,229,255,0.06) inset;
+  color: var(--accent);
+}
+.neon-btn:hover { box-shadow:0 8px 28px rgba(0,229,255,0.12), 0 0 28px rgba(0,229,255,0.12) inset }
+
+/* Cards */
+.card-neo {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+  color:#FFFFFF;
+}
+
+/* Services Icons */
+.service-icon {
+  width:56px; height:56px; border-radius:12px;
+  background:rgba(13,23,36,0.6);
+  border:1px solid rgba(77,168,218,0.08);
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* Workflow */
+.step-bubble {
+  width:72px; height:72px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700;
+  background:linear-gradient(180deg, rgba(0,229,255,0.06), rgba(77,168,218,0.03));
+  border:1px solid rgba(0,229,255,0.14);
+  color:#FFFFFF;
+}
+
+/* Portfolio */
+.portfolio-card { position:relative; overflow:hidden; border-radius:10px; }
+.portfolio-card img { width:100%; height:220px; object-fit:cover; display:block; }
+.portfolio-overlay {
+  position:absolute; inset:0;
+  background:linear-gradient(180deg, rgba(10,15,31,0.0), rgba(10,15,31,0.6));
+  display:flex; align-items:flex-end; padding:1rem;
+  color:#FFFFFF;
+}
+
+/* CTA */
+.big-cta {
+  padding:3.2rem; border-radius:12px;
+  background:linear-gradient(180deg, rgba(0,229,255,0.03), rgba(77,168,218,0.01));
+  border:1px solid rgba(0,229,255,0.06); text-align:center;
+  color:#FFFFFF;
+}
+
+/* Contact */
+.form-control {
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.04);
+  color:#FFFFFF;
+}
+::placeholder { color: rgba(234,246,255,0.4) }
+
+footer { padding:2.4rem 0; color:#FFFFFF; }
+
+/* Utilities */
+.glow { filter:drop-shadow(0 8px 32px rgba(0,229,255,0.06)) }
+
+/* Section Layout Fix */
+section {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top:120px;
+  padding-bottom:120px;
+  position:relative;
+  z-index:1;
+}
+
+/* Alternate backgrounds */
+#workflow { background:var(--bg-2); }
+#portfolio { background:var(--bg); }
+#contact { background:var(--bg-2); }
+
+section + section { border-top:1px solid rgba(255,255,255,0.05); }
+
+/* Ensure muted is readable */
+.text-muted { color:#FFFFFF !important }
+
+@media(min-width:992px){
+  .hero h1 { font-size:3.4rem; }
+}
