@@ -1,527 +1,685 @@
 <!doctype html>
+
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EZ Web Solutions</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <head>
 
-  <meta name="description" content="EZ Web Solutions — modern, secure, and scalable websites for businesses and students.">
+    <title>EZ Web Solutions</title>
 
-  <link rel="icon" type="image/png" href="resources/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="resources/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="resources/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="EZ Web" />
-  <link rel="manifest" href="resources/favicon/site.webmanifest" />
+    <!-- Standard Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EZ Web Solutions — modern, secure, and scalable websites for businesses and students.">
 
-</head>
-<body>
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="EZ Web Solutions">
+    <meta property="og:description" content="Modern Web Solutions for Every Business">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ezmasterdev.github.io/EZ-Web-Solutions/">
+    <meta property="og:image" content="resources/images/logo.png">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-xl">
-      <a class="navbar-brand" href="#">EZ Web Solutions</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-3"><a class="btn neon-btn" href="#contact">Request a Quote</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Twitter Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EZ Web Solutions">
+    <meta name="twitter:description" content="Modern Web Solutions for Every Business">
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container-xl">
-      <div class="row align-items-center">
-        <div class="col-lg-6" data-aos="fade-up">
-          <p class="eyebrow">Empowering Your Business Through Technology</p>
-          <h1 class="mt-3">Modern web solutions that scale with your business</h1>
-          <p class="lead-weak mt-3">We build modern, secure, and scalable websites designed to help businesses grow and students succeed in their system projects.</p>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 
-          <div class="mt-4 d-flex gap-3">
-            <a href="#contact" class="btn btn-lg neon-btn glow">Get a Free Quote</a>
-            <a href="#portfolio" class="btn btn-outline-light btn-lg">View Our Work</a>
-          </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="resources/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="resources/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="resources/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="EZ Web" />
+    <link rel="manifest" href="resources/favicon/site.webmanifest" />
 
-          <ul class="d-flex gap-3 list-unstyled mt-4">
-            <li class="small text-muted">HTML • CSS • JS • Bootstrap</li>
-            <li class="small text-muted">PHP • MySQL • WAMP</li>
-            <li class="small text-muted">Responsive • Secure • Fast</li>
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ezmasterdev.github.io/EZ-Web-Solutions/">
+
+    <!-- Schema: Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "EZ Web Solutions",
+      "url": "https://ezmasterdev.github.io/EZ-Web-Solutions/",
+      "logo": "https://ezmasterdev.github.io/EZ-Web-Solutions/assets/images/logo.png",
+      "description": "Modern web design, development, and SEO solutions.",
+      "areaServed": "Philippines",
+      "founder": "Marl Ezechiel Conde"
+    }
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="resources/images/logo.png" alt="EZ Web Solutions Logo" 
+          class="me-2" style="height: 35px; width: auto;">
+          <span>EZ Web Solutions</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#workflow">Workflow</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item ms-3"><a class="btn neon-btn" href="#contact">Request a Quote</a></li>
           </ul>
         </div>
-
-        <div class="col-lg-6 d-none d-lg-block" data-aos="zoom-in">
-        <div class="card-neo p-4" style="border-radius:16px;">
-            <div class="d-flex gap-3 align-items-center">
-            <img src="resources/images/logo.png" alt="EZ Logo" width="72" height="72" style="border-radius:12px;">
-            <div>
-                <h5 style="margin:0;font-family:'Montserrat'">EZ Web Solutions</h5>
-                <small class="text-muted">Full-stack web development services</small>
-            </div>
-            </div>
-            <div class="row mt-4 g-3">
-            <div class="col-6">
-                <div class="p-3" style="background:rgba(255,255,255,0.02);border-radius:10px"> 
-                <div class="h5 mt-2">Why Choose Us?</div>
-                <small class="text-muted">✅ Initial <b>ONE YEAR</b> of <b>domain</b> and <b>hosting</b> is already covered</small>
-                <small class="text-muted">✅ Book consultation for <b>FREE</b>!</small>
-                <small class="text-muted">✅ Multiple <b>DISCOUNT</b> offers!</small>
-
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="p-3" style="background:rgba(255,255,255,0.02);border-radius:10px">
-                <small class="text-muted">Our Service:</small>
-                <div class="h5 mt-2">Web Development</div> 
-                <small class="text-muted">Our Expertise:</small>
-                <div class="h5 mt-2">Full-Stack Solutions</div>
-                </div>
-            </div>
-            </div>
-            <div class="mt-4 d-flex gap-2 justify-content-end">
-            <small class="text-muted">Secure • Tested • Deployed</small>
-            </div>
-        </div>
-        </div>
-
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <!-- Services -->
-  <section id="services" class="py-5">
-    <div class="container-xl">
-      <div class="row align-items-center">
-        <div class="col-lg-6" data-aos="fade-right">
-          <h3 class="mb-3">Our Core Services</h3>
-          <p class="text-muted">Custom web solutions tailored to your specific needs. Pricing is available upon consultation.</p>
+    <!-- Header/Hero -->
+    <header class="hero">
+      <div class="container-xl">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <p class="eyebrow">Empowering Your Business Through Technology</p>
+            <h1 class="mt-3">Modern web solutions that scale with your business</h1>
+            <p class="lead-weak mt-3">We build modern, secure, and scalable websites designed to help businesses grow and students succeed in their system projects.</p>
 
-          <div class="row g-3 mt-3">
-            <div class="col-md-6">
-              <div class="card-neo p-3 h-100">
-                <div class="d-flex align-items-start gap-3">
-                  <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12H21" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 16H18" stroke="#4DA8DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8H12.01" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  </div>
-                  <div>
-                    <h6 class="mb-1">Static Websites & Landing Pages</h6>
-                    <p class="small text-muted mb-0">High-speed, responsive single or multi-page sites for portfolios, small businesses, and product promotion.</p>
-                  </div>
-                </div>
-
-                <div class="mt-3 d-flex justify-content-end">
-                  <a href="#contact" class="btn btn-sm btn-outline-light">Request Pricing</a>
-                </div>
-              </div>
+            <div class="mt-4 d-flex gap-3">
+              <a href="#contact" class="btn btn-lg neon-btn glow">Get a Free Quote</a>
+              <a href="#portfolio" class="btn btn-outline-light btn-lg">View Our Work</a>
             </div>
 
-            <div class="col-md-6">
-              <div class="card-neo p-3 h-100">
-                <div class="d-flex align-items-start gap-3">
-                  <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2V22" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="#4DA8DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 8V16" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8V16" stroke="#4DA8DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  </div>
-                  <div>
-                    <h6 class="mb-1">Dynamic Websites & Thesis Systems</h6>
-                    <p class="small text-muted mb-0">Custom web applications with secure user authentication, admin panels, and MySQL database integration.</p>
-                  </div>
-                </div>
-
-                <div class="mt-3 d-flex justify-content-end">
-                  <a href="#contact" class="btn btn-sm neon-btn">Get Custom Quote</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
-          <div class="card-neo p-4 h-100">
-            <h6 class="mb-3">What we include in every project</h6>
-            <ul class="list-unstyled text-muted small">
-              <li><strong class="text-white">• Responsive UI & Branding:</strong> Flawless design across all devices.</li>
-              <li><strong class="text-white">• Backend Development & DB Design (Dynamic):</strong> Efficient PHP/MySQL logic and database architecture.</li>
-              <li><strong class="text-white">• Security Hardening and Testing:</strong> Protection against common web vulnerabilities.</li>
-              <li><strong class="text-white">• Deployment & Basic SEO Guidance:</strong> Assistance with hosting setup and initial optimization.</li>
-              <li><strong class="text-white">• Documentation & Support:</strong> Clean code, documentation, and post-launch support.</li>
+            <ul class="d-flex gap-3 list-unstyled mt-4">
+              <li class="small text-muted">HTML • CSS • JS • Bootstrap</li>
+              <li class="small text-muted">PHP • MySQL • WAMP</li>
+              <li class="small text-muted">Responsive • Secure • Fast</li>
             </ul>
           </div>
-        </div>
 
+          <div class="col-lg-6 d-none d-lg-block" data-aos="zoom-in">
+          <div class="card-neo p-4" style="border-radius:16px;">
+              <div class="d-flex gap-3 align-items-center">
+              <img src="resources/images/logo.png" alt="EZ Logo" width="72" height="72" style="border-radius:12px;">
+              <div>
+                  <h5 style="margin:0;font-family:'Montserrat'">EZ Web Solutions</h5>
+                  <small class="text-muted">Full-stack web development services</small>
+              </div>
+              </div>
+              <div class="row mt-4 g-3">
+              <div class="col-6">
+                  <div class="p-3" style="background:rgba(255,255,255,0.02);border-radius:10px"> 
+                  <div class="h5 mt-2">Why Choose Us?</div>
+                  <small class="text-muted">✅ Initial <b>ONE YEAR</b> of <b>domain</b> and <b>hosting</b> is already covered</small>
+                  <small class="text-muted">✅ Book consultation for <b>FREE</b>!</small>
+                  <small class="text-muted">✅ Multiple <b>DISCOUNT</b> offers!</small>
+
+                  </div>
+              </div>
+              <div class="col-6">
+                  <div class="p-3" style="background:rgba(255,255,255,0.02);border-radius:10px">
+                  <small class="text-muted">Our Service:</small>
+                  <div class="h5 mt-2">Web Development</div> 
+                  <small class="text-muted">Our Expertise:</small>
+                  <div class="h5 mt-2">Full-Stack Solutions</div>
+                  </div>
+              </div>
+              </div>
+              <div class="mt-4 d-flex gap-2 justify-content-end">
+              <small class="text-muted">Secure • Tested • Deployed</small>
+              </div>
+          </div>
+          </div>
+
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Workflow -->
-  <section id="workflow" class="py-5">
-  <div class="container-xl position-relative">
-    <!-- Vertical timeline line (optional, desktop) -->
-    <div class="workflow-line d-none d-lg-block"></div>
+    <main>
 
-    <div class="row align-items-center">
-      <!-- Text Content -->
-      <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-        <div class="workflow-image mb-3 text-center">
-            <img src="resources/images/html.gif" alt="Workflow Icon" class="img-fluid" style="max-width:50px;">
+      <!-- Services -->
+      <section id="services" class="py-5">
+        <div class="container-xl">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h3 class="mb-3">Our Core Services</h3>
+              <p class="text-muted">Custom web solutions tailored to your specific needs. Pricing is available upon consultation.</p>
+
+              <div class="row g-3 mt-3">
+                <div class="col-md-6">
+                  <div class="card-neo p-3 h-100">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M3 12H21" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 16H18" stroke="#4DA8DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8H12.01" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </div>
+                      <div>
+                        <h6 class="mb-1">Static Websites & Landing Pages</h6>
+                        <p class="small text-muted mb-0">High-speed, responsive single or multi-page sites for portfolios, small businesses, and product promotion.</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 d-flex justify-content-end">
+                      <a href="#contact" class="btn btn-sm btn-outline-light">Request Pricing</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card-neo p-3 h-100">
+                    <div class="d-flex align-items-start gap-3">
+                      <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2V22" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12H4" stroke="#4DA8DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 8V16" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 8V16" stroke="#4DA8DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      </div>
+                      <div>
+                        <h6 class="mb-1">Dynamic Websites & Thesis Systems</h6>
+                        <p class="small text-muted mb-0">Custom web applications with secure user authentication, admin panels, and MySQL database integration.</p>
+                      </div>
+                    </div>
+
+                    <div class="mt-3 d-flex justify-content-end">
+                      <a href="#contact" class="btn btn-sm neon-btn">Get Custom Quote</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+              <div class="card-neo p-4 h-100">
+                <h6 class="mb-3">What we include in every project</h6>
+                <ul class="list-unstyled text-muted small">
+                  <li><strong class="text-white">• Responsive UI & Branding:</strong> Flawless design across all devices.</li>
+                  <li><strong class="text-white">• Backend Development & DB Design (Dynamic):</strong> Efficient PHP/MySQL logic and database architecture.</li>
+                  <li><strong class="text-white">• Security Hardening and Testing:</strong> Protection against common web vulnerabilities.</li>
+                  <li><strong class="text-white">• Deployment & Basic SEO Guidance:</strong> Assistance with hosting setup and initial optimization.</li>
+                  <li><strong class="text-white">• Documentation & Support:</strong> Clean code, documentation, and post-launch support.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
-        <h3 class="mb-3">Our Transparent Workflow</h3>
-        <p class="text-muted">A simple, transparent process designed to deliver quality on schedule, ensuring you are involved at every stage.</p>
-        <div class="workflow-image mb-4 text-center">
-            <img src="resources/images/workflow.gif" alt="Workflow Icon" class="img-fluid" style="max-width:5   250px;">
+      </section>
+
+      <!-- Workflow -->
+      <section id="workflow" class="py-5">
+      <div class="container-xl position-relative">
+        <!-- Vertical timeline line (optional, desktop) -->
+        <div class="workflow-line d-none d-lg-block"></div>
+
+        <div class="row align-items-center">
+          <!-- Text Content -->
+          <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+            <div class="workflow-image mb-3 text-center">
+                <img src="resources/images/html.gif" alt="Workflow Icon" class="img-fluid" style="max-width:50px;">
+            </div>
+            <h3 class="mb-3">Our Transparent Workflow</h3>
+            <p class="text-muted">A simple, transparent process designed to deliver quality on schedule, ensuring you are involved at every stage.</p>
+            <div class="workflow-image mb-4 text-center">
+                <img src="resources/images/workflow.gif" alt="Workflow Icon" class="img-fluid" style="max-width:5   250px;">
+            </div>
+          </div>
+
+          <!-- Steps -->
+          <div class="col-lg-7">
+            <div class="d-flex flex-column gap-4">
+              
+              <!-- Step 1 -->
+              <div class="workflow-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="step-bubble-wrapper me-3">
+                  <div class="step-bubble">🗣️</div>
+                  <div class="step-arrow"></div>
+                </div>
+                <div>
+                  <h5 class="text-white mb-1">1. Consultation</h5>
+                  <p class="text-muted mb-0">Understanding your goals and technical requirements.</p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="workflow-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="step-bubble-wrapper me-3">
+                  <div class="step-bubble">📐</div>
+                  <div class="step-arrow"></div>
+                </div>
+                <div>
+                  <h5 class="text-white mb-1">2. Planning & Architecture</h5>
+                  <p class="text-muted mb-0">Defining system structure and database design.</p>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="workflow-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="step-bubble-wrapper me-3">
+                  <div class="step-bubble">💻</div>
+                  <div class="step-arrow"></div>
+                </div>
+                <div>
+                  <h5 class="text-white mb-1">3. Design & Development</h5>
+                  <p class="text-muted mb-0">Building UI and implementing back-end logic.</p>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="workflow-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="step-bubble-wrapper me-3">
+                  <div class="step-bubble">✅</div>
+                  <div class="step-arrow"></div>
+                </div>
+                <div>
+                  <h5 class="text-white mb-1">4. Testing & QA</h5>
+                  <p class="text-muted mb-0">Rigorous testing for bugs, security, and responsiveness.</p>
+                </div>
+              </div>
+
+              <!-- Step 5 (no arrow on last step) -->
+              <div class="workflow-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="step-bubble-wrapper me-3">
+                  <div class="step-bubble">🚀</div>
+                </div>
+                <div>
+                  <h5 class="text-white mb-1">5. Deployment & Support</h5>
+                  <p class="text-muted mb-0">Launching the system and providing maintenance.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
+      </section>
 
-      <!-- Steps -->
-      <div class="col-lg-7">
-        <div class="d-flex flex-column gap-4">
+      <!-- Portfolio -->
+      <section id="portfolio" class="py-5">
+      <div class="container-xl">
+        <div class="mb-4">
+          <h3 class="text-center">Recent Projects</h3>
+        </div>
+
+        <h6 class="mb-4 text-center">
+          Here are some of our latest projects, each reflecting our focus on quality, innovation, and a seamless user experience.
+        </h6>
+
+        <p class="text-muted text-center" style="margin-bottom: 5%; color: #00E5FF !important;">(Click to visit site.)</p>
+
+        <div class="row g-4">
+          <!-- Portfolio Card Example -->
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+            <a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank" class="portfolio-link">
+              <div class="portfolio-card card-neo">
+                <img src="resources/images/proj1.png" alt="Grab A Wing Screenshot">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h6 class="text-center" style="margin-top: 5%;">Grab A Wing</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
+            <a href="https://ezmasterdev.github.io/MSM/" target="_blank" class="portfolio-link">
+              <div class="portfolio-card card-neo">
+                <img src="resources/images/proj2.png" alt="MSM Company Screenshot">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h6 class="text-center" style="margin-top: 5%;">MSM Company</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+            <a href="https://ezmasterdev.github.io/Pampiri/" target="_blank" class="portfolio-link">
+              <div class="portfolio-card card-neo">
+                <img src="resources/images/proj3.png" alt="Pampiri Trading Screenshot">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h6 class="text-center" style="margin-top: 5%;">Pampiri Trading</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+            <a href="https://mingtengs.online/index.html" target="_blank" class="portfolio-link">
+              <div class="portfolio-card card-neo">
+                <img src="resources/images/proj4.png" alt="MingTeng's Kinalasan Screenshot">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h6 class="text-center" style="margin-top: 5%;">MingTeng's Kinalasan</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+            <a href="https://ezmasterdev.github.io/4mEZprint/" target="_blank" class="portfolio-link">
+              <div class="portfolio-card card-neo">
+                <img src="resources/images/proj5.png" alt="4M EZ Print Screenshot">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h6 class="text-center" style="margin-top: 5%;">4M EZ Print</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
+            <a href="https://ezmasterdev.github.io/Jane-Website/" target="_blank" class="portfolio-link">
+              <div class="portfolio-card card-neo">
+                <img src="resources/images/proj6.png" alt="VA Jane Laurine Screenshot">
+                <div class="portfolio-overlay">
+                  <div>
+                    <h6 class="text-center" style="margin-top: 5%;">VA Jane Laurine</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="py-5">
+        <div class="container-xl text-center">
+          <h3 class="mb-4" data-aos="fade-up">What People Are Saying</h3>
+          <h6 class="mb-4 text-center" data-aos="fade-up">
+            Here are some of the latest reviews from our clients and followers, highlighting our commitment to quality, creativity, and exceptional service.
+          </h6>
+
+          <!-- Top carousel: left → right -->
+          <div class="testimonial-carousel-wrapper top-carousel" data-aos="fade-right">
+            <div class="testimonial-carousel">
+
+              <!-- Add your cards here -->
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client1.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>John Rex</h5>
+                      <small class="date">Client</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">"I strongly suggest choosing EZMASTERDEV as your web developer for your business. Share your desired outcomes for your website, and he will deliver exceptional results 🔥💯😎."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client3.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>Ellen Manalo</h5>
+                      <small class="date">Client</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">"The EZ Web Solutions team are awesome! They got my website up super fast and it looks exactly how I imagined."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client2.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>Jane Laurine</h5>
+                      <small class="date">Client</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text" style="font-size: x-large;">"Thank You po!!!! Nice po! Reco ko kau sa iba 💕."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client4.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>Aidan Gecha</h5>
+                      <small class="date">Follower</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text" style="font-size: x-large;">"They're well done and pleasing to look at. Excellent quality"</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bottom carousel: right → left -->
+          <div class="testimonial-carousel-wrapper bottom-carousel" data-aos="fade-left">
+            <div class="testimonial-carousel reverse">
+
+              <!-- Add your cards here -->
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client6.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>Marlan Garcia</h5>
+                      <small class="date">follower</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">"His works are truly great! He’s reliable, professional, and always delivers on time. I really appreciate his dedication and strong work ethic. Highly recommend his services.."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client5.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>Aaron Paul</h5>
+                      <small class="date">Follower</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text" style="font-size: x-large;">"Very Professional! 5/5 stars."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client3.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>Ellen Manalo</h5>
+                      <small class="date">Client</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">"Super easy to work with and really listened to what I wanted. Definitely recommend if you want your site done right without the headache!."</p>
+                </div>
+              </div>
+
+              <div class="testimonial-card-wrapper">
+                <div class="testimonial-card">
+                  <div class="testimonial-top d-flex align-items-start">
+                    <img src="resources/images/client1.jpeg" alt="Client pic" class="profile-pic me-3">
+                    <div class="testimonial-content">
+                      <h5>John Rex</h5>
+                      <small class="date">Client</small>
+                      <div class="rating">★★★★★</div>
+                    </div>
+                  </div>
+                  <p class="testimonial-text">"He maintains a positive attitude, providing timely reports on accomplished tasks. 5 stars for efforts, services, prices, and an authentic approach💯😁."</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="cta">
+      <div class="big-cta">
+        <div class="cta-bg"></div>
+        <h4 style="color: #fff;">Ready to launch your project?</h4>
+        <p class="text-muted">Whether it's a new business site or an academic system, <br>we're here to build it right.</p><br>
+        <a href="#contact" class="btn-cta glow">Request a Free Consultation</a>
+      </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-5" style="background:var(--bg-2);">
+      <div class="container-xl">
+        <div class="row align-items-start">
           
-          <!-- Step 1 -->
-          <div class="workflow-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="step-bubble-wrapper me-3">
-              <div class="step-bubble">🗣️</div>
-              <div class="step-arrow"></div>
-            </div>
-            <div>
-              <h5 class="text-white mb-1">1. Consultation</h5>
-              <p class="text-muted mb-0">Understanding your goals and technical requirements.</p>
-            </div>
-          </div>
+          <!-- Contact Form -->
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+            <h3>Start Your Project Today</h3>
+            <p class="text-muted">Have a project in mind? Fill out the form and we’ll get back to you shortly.</p>
 
-          <!-- Step 2 -->
-          <div class="workflow-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="step-bubble-wrapper me-3">
-              <div class="step-bubble">📐</div>
-              <div class="step-arrow"></div>
-            </div>
-            <div>
-              <h5 class="text-white mb-1">2. Planning & Architecture</h5>
-              <p class="text-muted mb-0">Defining system structure and database design.</p>
-            </div>
-          </div>
+            <div class="card-neo p-4" id="formWrapper">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="17f2c8df-3340-4d04-8bb2-7a9af9f8314e">
 
-          <!-- Step 3 -->
-          <div class="workflow-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="step-bubble-wrapper me-3">
-              <div class="step-bubble">💻</div>
-              <div class="step-arrow"></div>
-            </div>
-            <div>
-              <h5 class="text-white mb-1">3. Design & Development</h5>
-              <p class="text-muted mb-0">Building UI and implementing back-end logic.</p>
-            </div>
-          </div>
+                    <div class="mb-3">
+                    <label class="form-label small">Full Name</label>
+                    <input class="form-control" type="text" name="name" placeholder="Jane Doe" required>
+                    </div>
 
-          <!-- Step 4 -->
-          <div class="workflow-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="step-bubble-wrapper me-3">
-              <div class="step-bubble">✅</div>
-              <div class="step-arrow"></div>
-            </div>
-            <div>
-              <h5 class="text-white mb-1">4. Testing & QA</h5>
-              <p class="text-muted mb-0">Rigorous testing for bugs, security, and responsiveness.</p>
-            </div>
-          </div>
+                    <div class="mb-3">
+                    <label class="form-label small">Email</label>
+                    <input class="form-control" type="email" name="email" placeholder="name@domain.com" required>
+                    </div>
 
-          <!-- Step 5 (no arrow on last step) -->
-          <div class="workflow-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="step-bubble-wrapper me-3">
-              <div class="step-bubble">🚀</div>
-            </div>
-            <div>
-              <h5 class="text-white mb-1">5. Deployment & Support</h5>
-              <p class="text-muted mb-0">Launching the system and providing maintenance.</p>
-            </div>
-          </div>
+                    <div class="mb-3">
+                    <label class="form-label small">Project Type</label>
+                    <select class="form-select" name="project">
+                        <option>Static Business Website / Landing Page</option>
+                        <option>Dynamic Web Application (PHP/MySQL)</option>
+                        <option>Academic Thesis/Capstone System</option>
+                        <option>Maintenance & Support</option>
+                        <option>Other Inquiry</option>
+                    </select>
+                    </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
-  </section>
+                    <div class="mb-3">
+                    <label class="form-label small">Project Details / Message</label>
+                    <textarea class="form-control" name="message" rows="4" placeholder="Brief description of your project"></textarea>
+                    </div>
 
-  <!-- Portfolio -->
-  <section id="portfolio" class="py-5">
-  <div class="container-xl">
-    <div class="mb-4">
-      <h3 class="text-center">Recent Projects</h3>
-    </div>
+                    <div class="d-flex justify-content-end">
+                    <button class="btn neon-btn" type="submit">Send Inquiry</button>
+                    </div>
+                </form>
 
-    <h6 class="mb-4 text-center">
-      Here are some of our latest projects, each reflecting our focus on quality, innovation, and a seamless user experience.
-    </h6>
-
-    <p class="text-muted text-center" style="margin-bottom: 5%; color: #00E5FF !important;">(Click to visit site.)</p>
-
-    <div class="row g-4">
-      <!-- Portfolio Card Example -->
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-        <a href="https://ezmasterdev.github.io/G.A.W-home/" target="_blank" class="portfolio-link">
-          <div class="portfolio-card card-neo">
-            <img src="resources/images/proj1.png" alt="Grab A Wing Screenshot">
-            <div class="portfolio-overlay">
-              <div>
-                <h6 class="text-center" style="margin-top: 5%;">Grab A Wing</h6>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="80">
-        <a href="https://ezmasterdev.github.io/MSM/" target="_blank" class="portfolio-link">
-          <div class="portfolio-card card-neo">
-            <img src="resources/images/proj2.png" alt="MSM Company Screenshot">
-            <div class="portfolio-overlay">
-              <div>
-                <h6 class="text-center" style="margin-top: 5%;">MSM Company</h6>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
-        <a href="https://ezmasterdev.github.io/Pampiri/" target="_blank" class="portfolio-link">
-          <div class="portfolio-card card-neo">
-            <img src="resources/images/proj3.png" alt="Pampiri Trading Screenshot">
-            <div class="portfolio-overlay">
-              <div>
-                <h6 class="text-center" style="margin-top: 5%;">Pampiri Trading</h6>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
-        <a href="https://mingtengs.online/index.html" target="_blank" class="portfolio-link">
-          <div class="portfolio-card card-neo">
-            <img src="resources/images/proj4.png" alt="MingTeng's Kinalasan Screenshot">
-            <div class="portfolio-overlay">
-              <div>
-                <h6 class="text-center" style="margin-top: 5%;">MingTeng's Kinalasan</h6>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
-        <a href="https://ezmasterdev.github.io/4mEZprint/" target="_blank" class="portfolio-link">
-          <div class="portfolio-card card-neo">
-            <img src="resources/images/proj5.png" alt="4M EZ Print Screenshot">
-            <div class="portfolio-overlay">
-              <div>
-                <h6 class="text-center" style="margin-top: 5%;">4M EZ Print</h6>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="160">
-        <a href="https://ezmasterdev.github.io/Jane-Website/" target="_blank" class="portfolio-link">
-          <div class="portfolio-card card-neo">
-            <img src="resources/images/proj6.png" alt="VA Jane Laurine Screenshot">
-            <div class="portfolio-overlay">
-              <div>
-                <h6 class="text-center" style="margin-top: 5%;">VA Jane Laurine</h6>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  </section>
-
-  <!-- Testimonials Section 
-  <section id="testimonials" class="py-5" style="background: var(--bg-2);">
-  <div class="container-xl text-center">
-    <h3 class="mb-5" data-aos="fade-up">What Our Clients Say</h3>
-
-    <div class="testimonial-carousel" data-aos="fade-up" data-aos-delay="100">
-      <div class="testimonial-card">
-        <img src="path/to/client1.jpg" alt="Client pic" class="profile-pic">
-        <h5>Jane Doe</h5>
-        <small class="text-muted">March 12, 2025</small>
-        <div class="rating">
-          ★★★★★
-        </div>
-        <p>"EZ Web Solutions delivered my website quickly and professionally. Highly recommended!"</p>
-      </div>
-
-      <div class="testimonial-card">
-        <img src="path/to/client1.jpg" alt="Client pic" class="profile-pic">
-        <h5>John Smith</h5>
-        <small class="text-muted">January 8, 2025</small>
-        <div class="rating">
-          ★★★★★
-        </div>
-        <p>"Fantastic experience! The team is responsive, creative, and detail-oriented."</p>
-      </div>
-
-      <div class="testimonial-card">
-        <img src="path/to/client1.jpg" alt="Client pic" class="profile-pic">
-        <h5>Mary Johnson</h5>
-        <small class="text-muted">April 2, 2025</small>
-        <div class="rating">
-          ★★★★★
-        </div>
-        <p>"Great service and support. My dynamic web application works perfectly."</p>
-      </div>
-    </div>
-  </div>
-  </section>
-  -->
-
-  <!-- CTA Section -->
-  <section id="cta">
-  <div class="big-cta">
-    <div class="cta-bg"></div>
-    <h4>Ready to launch your project?</h4>
-    <p class="text-muted">Whether it's a new business site or an academic system, we're here to build it right.</p><br>
-    <a href="#contact" class="btn-cta glow">Request a Free Consultation</a>
-  </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-5" style="background:var(--bg-2);">
-  <div class="container-xl">
-    <div class="row align-items-start">
-      
-      <!-- Contact Form -->
-      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-        <h3>Start Your Project Today</h3>
-        <p class="text-muted">Have a project in mind? Fill out the form and we’ll get back to you shortly.</p>
-
-        <div class="card-neo p-4" id="formWrapper">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="17f2c8df-3340-4d04-8bb2-7a9af9f8314e">
-
-                <div class="mb-3">
-                <label class="form-label small">Full Name</label>
-                <input class="form-control" type="text" name="name" placeholder="Jane Doe" required>
+                <!-- Thank You Card (hidden by default) -->
+                <div id="thankYouCard" class="text-center" style="display:none; padding:2rem;">
+                    <h4>Thank You!</h4>
+                    <p class="text-muted">Your message has been sent successfully. We'll get back to you shortly.</p>
+                    <button class="btn neon-btn mt-3" id="backToForm">Send Another</button>
                 </div>
-
-                <div class="mb-3">
-                <label class="form-label small">Email</label>
-                <input class="form-control" type="email" name="email" placeholder="name@domain.com" required>
-                </div>
-
-                <div class="mb-3">
-                <label class="form-label small">Project Type</label>
-                <select class="form-select" name="project">
-                    <option>Static Business Website / Landing Page</option>
-                    <option>Dynamic Web Application (PHP/MySQL)</option>
-                    <option>Academic Thesis/Capstone System</option>
-                    <option>Maintenance & Support</option>
-                    <option>Other Inquiry</option>
-                </select>
-                </div>
-
-                <div class="mb-3">
-                <label class="form-label small">Project Details / Message</label>
-                <textarea class="form-control" name="message" rows="4" placeholder="Brief description of your project"></textarea>
-                </div>
-
-                <div class="d-flex justify-content-end">
-                <button class="btn neon-btn" type="submit">Send Inquiry</button>
-                </div>
-            </form>
-
-            <!-- Thank You Card (hidden by default) -->
-            <div id="thankYouCard" class="text-center" style="display:none; padding:2rem;">
-                <h4>Thank You!</h4>
-                <p class="text-muted">Your message has been sent successfully. We'll get back to you shortly.</p>
-                <button class="btn neon-btn mt-3" id="backToForm">Send Another</button>
             </div>
-        </div>
 
+          </div>
+
+          <!-- Contact Info + Map -->
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="card-neo p-4 mb-4">
+              <h6>Contact Information</h6>
+              <p class="text-muted"><strong>Email:</strong> <a href="mailto:ezmasterdev28@gmail.com">ezmasterdev28@gmail.com</a></p>
+              <p class="text-muted"><strong>FB Page:</strong> <a href="https://www.facebook.com/profile.php?id=100091732606552" target="_blank">EZ Web Solutions </a></p>
+              <p class="text-muted"><strong>Location:</strong> Sampaloc, Manila Philippines</p>
+              <p class="text-muted small">We serve clients globally but specialize in local projects.</p>
+
+              <hr class="border-light opacity-25">
+
+              <h6>Why Choose EZ Web Solutions?</h6>
+              <ul class="list-unstyled text-muted small">
+                <li>✅ Initial <b>ONE YEAR</b> of <b>domain</b> and <b>hosting</b> is already covered</li>
+                <li>✅ Book consultation for <b>FREE</b>!</li>
+                <li>✅ Multiple <b>DISCOUNT</b> offers!</li>
+                <li>✅ Focused expertise in PHP, MySQL, and secure deployment.</li>
+                <li>✅ Clear communication and transparent project updates.</li>
+                <li>✅ Dedicated post-launch support and maintenance options.</li>
+              </ul>
+            </div>
+
+            <!-- Embedded Google Map -->
+            <div class="card-neo p-3">
+              <h6>Our Location</h6>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30886.058730770554!2d120.98080155408209!3d14.612894573773463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b61d9307d247%3A0x281469aa269717a5!2sSampaloc%2C%20Manila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1765115621364!5m2!1sen!2sph"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
       </div>
+      </section>
 
-      <!-- Contact Info + Map -->
-      <div class="col-lg-6" data-aos="fade-left">
-        <div class="card-neo p-4 mb-4">
-          <h6>Contact Information</h6>
-          <p class="text-muted"><strong>Email:</strong> <a href="mailto:ezmasterdev28@gmail.com">ezmasterdev28@gmail.com</a></p>
-          <p class="text-muted"><strong>FB Page:</strong> <a href="https://www.facebook.com/profile.php?id=100091732606552" target="_blank">EZ Web Solutions </a></p>
-          <p class="text-muted"><strong>Location:</strong> Sampaloc, Manila Philippines</p>
-          <p class="text-muted small">We serve clients globally but specialize in local projects.</p>
+    </main>
 
-          <hr class="border-light opacity-25">
-
-          <h6>Why Choose EZ Web Solutions?</h6>
-          <ul class="list-unstyled text-muted small">
-            <li>✅ Initial <b>ONE YEAR</b> of <b>domain</b> and <b>hosting</b> is already covered</li>
-            <li>✅ Book consultation for <b>FREE</b>!</li>
-            <li>✅ Multiple <b>DISCOUNT</b> offers!</li>
-            <li>✅ Focused expertise in PHP, MySQL, and secure deployment.</li>
-            <li>✅ Clear communication and transparent project updates.</li>
-            <li>✅ Dedicated post-launch support and maintenance options.</li>
-          </ul>
-        </div>
-
-        <!-- Embedded Google Map -->
-        <div class="card-neo p-3">
-          <h6>Our Location</h6>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30886.058730770554!2d120.98080155408209!3d14.612894573773463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b61d9307d247%3A0x281469aa269717a5!2sSampaloc%2C%20Manila%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1765115621364!5m2!1sen!2sph"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
+    <!-- Footer -->
+    <footer>
     <div class="container-xl">
       <div class="d-flex justify-content-between align-items-center flex-wrap">
-        <div>
-          <strong>EZ Web Solutions</strong>
-          <div class="small text-muted">Modern Web Solutions for Every Business</div>
+        
+        <!-- Brand + Tagline -->
+        <div class="d-flex align-items-center mb-2 mb-md-0">
+          <img src="resources/images/logo.png" alt="EZ Web Solutions Logo"
+              class="me-2" style="height: 50px; width: auto;">
+          <div>
+            <strong>EZ Web Solutions</strong>
+            <div class="small text-muted">Modern Web Solutions for Every Business</div>
+          </div>
         </div>
-        <div class="small text-muted mt-2 mt-md-0">© 2023 EZ Web Solutions. All rights reserved.</div>
+
+        <!-- Copyright -->
+        <div class="small text-muted mt-2 mt-md-0">
+          © 2023 EZ Web Solutions. All rights reserved.
+        </div>
+
       </div>
     </div>
-  </footer>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
 
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/6935ca4c2e7053198ac95af3/1jbt1sfk7';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-  
-</body>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6935ca4c2e7053198ac95af3/1jbt1sfk7';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+  </body>
+
 </html>
