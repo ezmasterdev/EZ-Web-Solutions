@@ -145,3 +145,19 @@ function setUniformTestimonialHeight() {
 setUniformTestimonialHeight();
 // Recalculate on window resize
 window.addEventListener('resize', setUniformTestimonialHeight);
+
+
+// ------------- //
+// Screen Loader
+// ------------- //
+// Hide loader after 3 seconds
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      const loader = document.getElementById("screen-loader");
+      loader.style.opacity = "0";
+      loader.style.transition = "opacity 0.6s ease";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 600);
+    }, 3000);
+  });
